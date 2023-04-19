@@ -2,20 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obi's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="nav">
-      <div class="logo">Obi Enechionyia</div>
-      <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/OE Logo GRAY.png" alt="obi logo" />
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="home-text">
+        <h1>Obi Enechionyia</h1>
+        <p>
+          Hi! I'm Obi. I'm a full-stack web developer. Thanks for visiting my
+          portfolio! Take a look at my personal projects, and feel free to
+          contact me using any of the links in the contact section.
+        </p>
       </div>
-    </div>
+    </section>
+
+    <section id="about">
+      <div class="about-text">
+        <h1>About Me</h1>
+        <p>
+          I am a former professional basketball player turned self-taught,
+          full-stack web developer with experience in Javascript, React.js,
+          Node.js, Python, Django, HTML, and CSS. After attending Temple
+          University for four years on a basketball scholarship, I decided to
+          jump head-first into software development. It has a been a passion of
+          mine since high school, and I always knew I would start my career in
+          it after finishing my athletic career. I made it my goal over the last
+          few years to be able to build functional websites and applications;
+          you can see the results of the work I put in here in my portfolio.
+          Thanks for visiting my site, and I hope you enjoy my personal projects
+          below!
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1>My Projects</h1>
+      <ul>
+        <li>
+          <h2>Flight Search Application</h2>
+          <p>
+            A React.js application that allows users to search for the cheapest
+            flights from any city in the world.
+          </p>
+          <a href="#">View Application</a>
+        </li>
+        <li>
+          <h2>Movie Preview Site</h2>
+          <p>
+            A website that allows users to see previews of the most popular
+            movies on IMDB at the moment.
+          </p>
+          <a href="#">View Site</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h1>Contact Me</h1>
+    </section>
   </body>
 </html>
