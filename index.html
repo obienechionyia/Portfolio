@@ -16,7 +16,11 @@
     <header>
       <nav>
         <div class="logo">
-          <img src="images/OE Logo GRAY.png" alt="obi logo" />
+          <img
+            src="images/OE Logo GRAY.png"
+            alt="obi logo"
+            onclick="window.location.reload()"
+          />
         </div>
         <div>
           <ul>
@@ -33,9 +37,10 @@
       <div class="home-text">
         <h1>Obi Enechionyia</h1>
         <p>
-          Hi! I'm Obi. I'm a full-stack web developer. Thanks for visiting my
-          portfolio! Take a look at my personal projects, and feel free to
-          contact me using any of the links in the contact section.
+          Hi! I'm Obi. I'm a
+          <span class="web-developer">full-stack web developer.</span> Thanks
+          for visiting my portfolio! Take a look at my personal projects, and
+          feel free to contact me using any of the links in the contact section.
         </p>
       </div>
     </section>
@@ -49,7 +54,7 @@
           Node.js, Python, Django, HTML, and CSS. After attending Temple
           University for four years on a basketball scholarship, I decided to
           jump head-first into software development. It has a been a passion of
-          mine since high school, and I always knew I would start my career in
+          mine since high school, and I always knew I would find my way back to
           it after finishing my athletic career. I made it my goal over the last
           few years to be able to build functional websites and applications;
           you can see the results of the work I put in here in my portfolio.
@@ -60,25 +65,62 @@
     </section>
 
     <section id="projects">
-      <h1>My Projects</h1>
-      <ul>
-        <li>
-          <h2>Flight Search Application</h2>
-          <p>
-            A React.js application that allows users to search for the cheapest
-            flights from any city in the world.
-          </p>
-          <a href="#">View Application</a>
-        </li>
-        <li>
-          <h2>Movie Preview Site</h2>
-          <p>
-            A website that allows users to see previews of the most popular
-            movies on IMDB at the moment.
-          </p>
-          <a href="#">View Site</a>
-        </li>
-      </ul>
+      <div class="projects-text">
+        <h1>My Projects</h1>
+        <ul>
+          <li>
+            <h2>Penny Flights</h2>
+            <p>
+              This is an application that allows users to enter their location,
+              and receive links to the cheapest flights available from the
+              entered origin, as well as the cheapest hotels in each
+              destination. The Skyscanner and IPify APIs were used in order to
+              pull the necessary data and apply it the application. Tech used:
+              <span class="tech-used"
+                >Javascript, React.js, HTML, and CSS.</span
+              >
+            </p>
+            <div class="project-display">
+              <div class="project-img">
+                <img
+                  src="images/pennyflights.png"
+                  alt="penny flights screenshot"
+                />
+              </div>
+              <div class="tech-logos">
+                <img src="images/js-png.png" alt="Javascript logo" />
+                <img src="images/react-png.png" alt="React logo" />
+                <img src="images/html-png.png" alt="HTML logo" />
+                <img src="images/css-png.png" alt="CSS logo" />
+              </div>
+            </div>
+          </li>
+          <li>
+            <h2>BestFlix</h2>
+            <p>
+              I created an application that shows the top movies and shows from
+              the IMDB API and displays them for the user in a format similar to
+              Netflix's. The user can then choose any film or show on display
+              and find a link to a trailer, or add it to a "Watch Later" list.
+              Tech used:
+              <span class="tech-used"
+                >Javascript, React.js, HTML, and CSS.</span
+              >
+            </p>
+            <div class="project-display">
+              <div class="project-img">
+                <img src="images/bestflix.png" alt="bestflix screenshot" />
+              </div>
+              <div class="tech-logos">
+                <img src="images/js-png.png" alt="Javascript logo" />
+                <img src="images/react-png.png" alt="React logo" />
+                <img src="images/html-png.png" alt="HTML logo" />
+                <img src="images/css-png.png" alt="CSS logo" />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="contact">

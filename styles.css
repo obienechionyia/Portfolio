@@ -47,7 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: rgb(128, 128, 128);
+  color: rgb(170, 255, 227);
 }
 
 section {
@@ -79,7 +79,7 @@ section ul li a {
 }
 
 section ul li a:hover {
-  background-color: rgb(0, 0, 0);
+  color: rgb(179, 170, 255);
 }
 
 .logo img {
@@ -87,16 +87,88 @@ section ul li a:hover {
   margin-left: 7rem;
 }
 
+.logo img:hover {
+  cursor: pointer;
+}
+
 .home-text {
-  padding: 15rem;
+  padding: 10rem;
 }
 
 .home-text h1 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 10rem;
-  line-height: 1rem;
 }
 
 .home-text p {
   font-size: 2rem;
+  margin-top: -3rem;
+}
+
+.web-developer {
+  color: rgb(170, 255, 227);
+}
+
+#about {
+  display: flex;
+}
+
+#about h1 {
+  font-size: 4rem;
+  margin: 3rem;
+}
+
+#about p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 4rem;
+}
+
+#projects {
+  display: flex;
+  line-height: 2rem;
+}
+
+#projects h1 {
+  font-size: 4rem;
+  margin: 3rem;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin: 4rem;
+  color: rgb(170, 255, 227);
+}
+
+#projects p {
+  font-size: 1.3rem;
+  margin: 4rem;
+}
+
+#projects a {
+  font-size: 1.3rem;
+  margin-left: 3rem;
+}
+
+.project-img img {
+  max-width: 700px;
+  margin-left: 10rem;
+}
+
+.project-display {
+  display: flex;
+  gap: 5rem;
+}
+
+.tech-used {
+  color: rgb(170, 255, 227);
+}
+
+.tech-logos img {
+  max-width: 150px;
+}
+
+#contact h1 {
+  font-size: 4rem;
+  margin: 3rem;
 }
