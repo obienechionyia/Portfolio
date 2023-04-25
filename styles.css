@@ -106,6 +106,10 @@ section ul li h2 {
 #about {
   display: flex;
   margin-bottom: 8rem;
+  border: 1px solid rgb(170, 255, 227);
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #about h1 {
@@ -123,6 +127,10 @@ section ul li h2 {
   display: flex;
   line-height: 2rem;
   margin-bottom: 8rem;
+  border: 1px solid rgb(170, 255, 227);
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #projects h1 {
@@ -134,7 +142,6 @@ section ul li h2 {
   font-size: 2rem;
   margin: 4rem;
   color: #d4d4d4;
-  text-decoration: underline;
 }
 
 #projects p {
@@ -229,4 +236,44 @@ hr.solid {
   to {
     background-position: -200% center;
   }
+}
+
+#contact {
+  border: 1px solid rgb(170, 255, 227);
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contact-links {
+  display: inline-block;
+}
+
+.contact-links img {
+  cursor: pointer;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+#contact button {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  background-color: transparent;
+  border: solid;
+  color: rgb(218, 218, 218);
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+#contact button:hover {
+  color: rgb(170, 255, 227);
+}
+
+footer {
+  background-color: rgb(170, 255, 227);
+  color: black;
+  padding: 10px;
+  margin-top: 100px;
 }
