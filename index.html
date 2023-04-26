@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   </head>
   <body>
     <header>
@@ -30,9 +31,17 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        <i class="fa-solid fa-bars" style="color: #aaffe3;"></i>
       </nav>
+      <button class="hamburger">
+          <div class="bar"></div>
+      </button>
     </header>
+    <nav class="mobile-nav">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <script>
         const myNav = document.getElementById("navbar");
@@ -47,9 +56,9 @@
 
     <section id="home">
       <div class="home-text">
-        <h1>Obi Enechionyia</h1>
+        <h1 class="full-name">Obi Enechionyia</h1>
         <p>
-          Hi! I'm Obi. I'm a
+          Hi! I'm Obi Enechionyia. I'm a
           <span class="web-developer">full-stack web developer.</span> Thanks
           for visiting my portfolio! Take a look at my personal projects, and
           feel free to contact me using any of the links in the contact section.
@@ -221,5 +230,20 @@
     <footer>
         <center><p>Copyright 2023 Obi Enechionyia</p></center>
     </footer>
+    <script>
+        const menuBtn = document.querySelector(".hamburger");
+        const mobileNav = document.querySelector(".mobile-nav");
+        const links = document.querySelectorAll(".mobile-nav a");
+        menuBtn.addEventListener("click", function () {
+            menuBtn.classList.toggle("is-active");
+            mobileNav.classList.toggle("show");
+        })
+        links.forEach(link => {
+            link.addEventListener("click", function (e) {
+                menuBtn.classList.remove("is-active");
+                mobileNav.classList.remove("show");
+            })
+        });
+    </script>
   </body>
 </html>
