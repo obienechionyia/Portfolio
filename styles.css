@@ -275,7 +275,6 @@ hr.solid {
 
 .contact-links img {
   cursor: pointer;
-  margin-right: 30px;
   margin-top: 20px;
   margin-bottom: 50px;
 }
@@ -288,7 +287,6 @@ hr.solid {
   border: solid;
   color: rgb(218, 218, 218);
   cursor: pointer;
-  margin-right: 30px;
 }
 
 #contact button:hover {
@@ -350,7 +348,7 @@ footer {
     padding-top: 120px;
     transition: 0.4s;
   }
-  a {
+  .movile-nav a {
     display: block;
     margin: 0 auto 16px;
     text-align: center;
@@ -394,6 +392,13 @@ footer {
   }
   .tech-links {
     margin-left: 5rem;
+  }
+  .contact-links a button {
+    padding: 0;
+    margin: 0;
+  }
+  .contact-logos img {
+    margin-top: 20px;
   }
 }
 
