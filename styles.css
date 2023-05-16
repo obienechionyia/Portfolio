@@ -130,8 +130,8 @@ section ul li h2 {
 #about {
   display: flex;
   margin-bottom: 8rem;
-  border: 1px solid rgb(170, 255, 227);
-  border-radius: 20px;
+  /* border: 1px solid rgb(170, 255, 227);
+  border-radius: 20px; */
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -263,8 +263,8 @@ hr.solid {
 }
 
 #contact {
-  border: 1px solid rgb(170, 255, 227);
-  border-radius: 20px;
+  /* border: 1px solid rgb(170, 255, 227);
+  border-radius: 20px; */
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -348,7 +348,7 @@ footer {
     padding-top: 120px;
     transition: 0.4s;
   }
-  .movile-nav a {
+  .mobile-nav a {
     display: block;
     margin: 0 auto 16px;
     text-align: center;
