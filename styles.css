@@ -188,6 +188,10 @@ section ul li h2 {
   gap: 5rem;
 }
 
+.tech {
+  margin-top: 3rem;
+}
+
 .tech-used {
   color: rgb(170, 255, 227);
 }
