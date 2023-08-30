@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Obi's Portfolio</title>
+    <link rel="icon" type="image/png" href="images/logo_gray.png" />
+    <title>Obi Enechionyia - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,18 +19,17 @@
       <nav id="navbar">
         <div class="logo">
           <img
-            src="images/OE Logo GRAY.png"
+            src="images/logo_gray.png"
             alt="obi logo"
             onclick="window.location.reload()"
           />
         </div>
         <div>
           <ul>
-            <li><a href="#">Home</a></li>
-            <!-- <li><a href="#about">About</a></li> -->
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="https://obienechionyia.tiiny.site/" target="_blank">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><span class="hire-me"><a href="#">Hire Me</a></span></li>
           </ul>
         </div>
       </nav>
@@ -38,11 +38,10 @@
       </button>
     </header>
     <nav class="mobile-nav">
-        <a href="#">Home</a>
-        <!-- <a href="#about">About</a> -->
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="https://obienechionyia.tiiny.site/" target="_blank">Resume</a>
-        <a href="#contact">Contact</a>
+        <a href="#">Hire Me</a>
     </nav>
 
     <script>
@@ -58,14 +57,13 @@
 
     <section id="home">
       <div class="home-text">
-        <h1 class="full-name">Obi Enechionyia</h1>
         <p>
-          Thanks for visiting my web development portfolio! Take a look at my <span class="web-developer"><a href="#projects">projects</a></span>, and
-          feel free to contact me using any of the links in the contact section.
+          <b>I'm Obi Enechionyia</b> – a front end developer based in Los Angeles, California.
         </p>
+        <a href="#projects"><button><b>View Projects</b></button></a>
       </div>
     </section>
-<!-- 
+
     <section id="about">
       <div class="about-text">
         <h1>About Me</h1>
@@ -75,18 +73,18 @@
           University for four years on a basketball scholarship, I decided to
           jump head-first into software development while playing basketball professionally in Europe. It has been a passion of
           mine since high school, and I always knew I would find my way back to
-          it after finishing my athletic career. I made it my goal over the last
-          few years to be able to build functional websites and applications;
-          you can see the results of the work I put in here in my portfolio.
+          it after finishing my athletic career. If I'm not coding, I'm probably listening to music, watching sports, or at the beach 😎 
           Thanks for visiting my site, and I hope you enjoy my personal projects
           below!
         </p>
+        <a href="https://obienechionyia.tiiny.site/" target="_blank"><button>View My Resume</button></a>
       </div>
-    </section> -->
+      <img class="about-img" src="images/about-me.png" alt="obi enechionyia">
+    </section>
 
     <section id="projects">
       <div class="projects-text">
-        <h1>Web Dev Projects</h1>
+        <h1>Projects</h1>
         <ul>
           <li>
             <h2>Penny Flights</h2>
@@ -108,12 +106,6 @@
                 />
               </div>
               <div class="tech">
-                <div class="tech-logos">
-                  <img src="images/js-png.png" alt="Javascript logo" />
-                  <img src="images/react-png.png" alt="React logo" />
-                  <img src="images/html-png.png" alt="HTML logo" />
-                  <img src="images/css-png.png" alt="CSS logo" />
-                </div>
                 <div class="tech-links">
                   <div class="link-buttons">
                     <button
@@ -121,7 +113,7 @@
                     >
                       GitHub
                     </button>
-                    <button onclick="window.open('https://pennyflights.onrender.com/')">Live Site</button>
+                    <button onclick="window.open('https://pennyflights.onrender.com/')">Live Demo</button>
                   </div>
                 </div>
               </div>
@@ -145,12 +137,6 @@
                 <img src="images/bestflix.png" alt="bestflix screenshot" />
               </div>
               <div class="tech">
-                <div class="tech-logos">
-                  <img src="images/js-png.png" alt="Javascript logo" />
-                  <img src="images/react-png.png" alt="React logo" />
-                  <img src="images/html-png.png" alt="HTML logo" />
-                  <img src="images/css-png.png" alt="CSS logo" />
-                </div>
                 <div class="tech-links">
                   <div class="link-buttons">
                     <button
@@ -158,7 +144,7 @@
                     >
                       GitHub
                     </button>
-                    <button onclick="window.open('https://bestflix.onrender.com/')" >Live Site</button>
+                    <button onclick="window.open('https://bestflix.onrender.com/')" >Live Demo</button>
                   </div>
                 </div>
               </div>
@@ -182,11 +168,6 @@
               />
             </div>
             <div class="tech">
-              <div class="tech-logos">
-                <img src="images/js-png.png" alt="Javascript logo" />
-                <img src="images/html-png.png" alt="HTML logo" />
-                <img src="images/css-png.png" alt="CSS logo" />
-              </div>
               <div class="tech-links">
                 <div class="link-buttons">
                   <button
@@ -194,7 +175,7 @@
                   >
                     GitHub
                   </button>
-                  <button onclick="window.open('https://la-landing-page.onrender.com/')">Live Site</button>
+                  <button onclick="window.open('https://la-landing-page.onrender.com/')">Live Demo</button>
                 </div>
               </div>
             </div>
@@ -217,11 +198,6 @@
               />
             </div>
             <div class="tech">
-              <div class="tech-logos">
-                <img src="images/js-png.png" alt="Javascript logo" />
-                <img src="images/html-png.png" alt="HTML logo" />
-                <img src="images/css-png.png" alt="CSS logo" />
-              </div>
               <div class="tech-links">
                 <div class="link-buttons">
                   <button
@@ -229,7 +205,7 @@
                   >
                     GitHub
                   </button>
-                  <button onclick="window.open('https://nudge-app.onrender.com')">Live Site</button>
+                  <button onclick="window.open('https://nudge-app.onrender.com')">Live Demo</button>
                 </div>
               </div>
             </div>
@@ -252,9 +228,6 @@
               />
             </div>
             <div class="tech">
-              <div class="tech-logos">
-                <img src="images/python-logo.png" alt="Python logo" />
-              </div>
               <div class="tech-links">
                 <div class="link-buttons">
                   <button
@@ -269,21 +242,6 @@
         </li>
         </ul>
       </div>
-    </section>
-    <section id="contact">
-    <center>
-      <h1>Contact Me</h1>
-      <div class="contact-text">
-          <h2>Questions/comments? Feel free to reach out, using any of the links below.</h2>
-          <div class="contact-links">
-            <a href="mailto:obienechionyia@gmail.com"><button class="email-btn" >Email</button></a>
-            <div class="contact-logos"">
-              <!-- <img src="images/linkedin.png" alt="LinkedIn logo" style="margin-right: 20px" onclick="window.open('https://www.linkedin.com/in/obi-enechionyia/')""> -->
-              <img src="images/github.png" alt="GitHub logo" onclick="window.open('https://github.com/obienechionyia')">
-            </div>
-          </div>
-      </div>
-    </center>
     </section>
     <footer>
         <center><p>Copyright 2023 Obi Enechionyia</p></center>
