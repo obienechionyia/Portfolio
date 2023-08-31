@@ -235,6 +235,16 @@ projects hr.solid {
   opacity: 0.4;
 }
 
+.hire-me-container {
+  display: flex;
+}
+
+.hire-me {
+  max-width: 12rem;
+  margin-bottom: 1rem;
+  margin-left: 24rem;
+}
+
 footer {
   background-color: #858585;
   color: rgb(231, 231, 231);
