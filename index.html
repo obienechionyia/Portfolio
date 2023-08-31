@@ -12,55 +12,68 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <nav id="navbar">
         <div class="logo">
-          <img
-            src="images/logo_gray.png"
-            alt="obi logo"
-            onclick="window.location.reload()"
-          />
+          <a href="#">
+            <img src="images/logo_gray.png" alt="obi logo" />
+          </a>
         </div>
         <div>
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="https://obienechionyia.tiiny.site/" target="_blank">Resume</a></li>
-            <li><span class="hire-me"><a href="#">Hire Me</a></span></li>
+            <li>
+              <a href="https://obienechionyia.tiiny.site/" target="_blank"
+                >Resume</a
+              >
+            </li>
+            <li>
+              <span class="hire-me"><a href="#footer">Hire Me</a></span>
+            </li>
           </ul>
         </div>
       </nav>
       <button class="hamburger">
-          <div class="bar"></div>
+        <div class="bar"></div>
       </button>
     </header>
     <nav class="mobile-nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="https://obienechionyia.tiiny.site/" target="_blank">Resume</a>
-        <a href="#">Hire Me</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="https://obienechionyia.tiiny.site/" target="_blank">Resume</a>
+      <a href="#">Hire Me</a>
     </nav>
 
     <script>
-        const myNav = document.getElementById("navbar");
-        window.onscroll = function () {
-            if (document.body.scrollTop >= 1 || document.documentElement.scrollTop >= 1) {
-                myNav.classList.add("nav-scroll");
-            } else {
-                myNav.classList.remove("nav-scroll");
-            };
-        };
+      const myNav = document.getElementById("navbar");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop >= 1 ||
+          document.documentElement.scrollTop >= 1
+        ) {
+          myNav.classList.add("nav-scroll");
+        } else {
+          myNav.classList.remove("nav-scroll");
+        }
+      };
     </script>
 
     <section id="home">
       <div class="home-text">
         <p>
-          <b>I'm Obi Enechionyia</b> – a front end developer based in Los Angeles, California.
+          <b>I'm Obi Enechionyia</b> – a front-end developer based in Los
+          Angeles, California.
         </p>
-        <a href="#projects"><button><b>View Projects</b></button></a>
+        <a href="#projects"
+          ><button><b>View Projects</b></button></a
+        >
       </div>
     </section>
 
@@ -68,18 +81,21 @@
       <div class="about-text">
         <h1>About Me</h1>
         <p>
-          I am a full-stack web developer from Springfield, Virginia with experience in Javascript, React.js,
-          Node.js, Python, Django, HTML, and CSS. After attending Temple
-          University for four years on a basketball scholarship, I decided to
-          jump head-first into software development while playing basketball professionally in Europe. It has been a passion of
+          I'm a front-end web developer based in Los Angeles, with experience in
+          Javascript, React.js, Node.js, Python, Django, HTML, and CSS. After
+          attending Temple University for four years on a basketball
+          scholarship, I decided to jump head-first into web development while
+          playing basketball professionally in Europe. It has been a passion of
           mine since high school, and I always knew I would find my way back to
-          it after finishing my athletic career. If I'm not coding, I'm probably listening to music, watching sports, or at the beach 😎 
-          Thanks for visiting my site, and I hope you enjoy my personal projects
-          below!
+          it after finishing my athletic career. If I'm not coding, I'm probably
+          listening to music, watching sports, or at the beach 😎 Thanks for
+          visiting my site, and I hope you enjoy my personal projects below!
         </p>
-        <a href="https://obienechionyia.tiiny.site/" target="_blank"><button>View My Resume</button></a>
+        <a href="https://obienechionyia.tiiny.site/" target="_blank"
+          ><button><b>View My Resume</b></button></a
+        >
       </div>
-      <img class="about-img" src="images/about-me.png" alt="obi enechionyia">
+      <img class="about-img" src="images/about-me.png" alt="obi enechionyia" />
     </section>
 
     <section id="projects">
@@ -87,179 +103,205 @@
         <h1>Projects</h1>
         <ul>
           <li>
-            <h2>Penny Flights</h2>
-            <p>
-              This is an application that allows users to enter their location,
-              and receive links to the cheapest flights available from the
-              entered origin, as well as the cheapest hotels in each
-              destination. The Skyscanner and IPify APIs were used in order to
-              pull the necessary data and apply it the application. Tech used:
-              <span class="tech-used"
-                >Javascript, React.js, HTML, and CSS</span
-              >
-            </p>
-            <div class="project-display">
-              <div class="project-img">
-                <img
-                  src="images/pennyflights.png"
-                  alt="penny flights screenshot"
-                />
+            <div class="project-container">
+              <div class="project-display">
+                <div class="project-img">
+                  <img
+                    src="images/pennyflights.png"
+                    alt="penny flights screenshot"
+                  />
+                </div>
               </div>
-              <div class="tech">
-                <div class="tech-links">
-                  <div class="link-buttons">
-                    <button
-                      onclick="window.open('https://github.com/obienechionyia/penny-flights')"
-                    >
-                      GitHub
-                    </button>
-                    <button onclick="window.open('https://pennyflights.onrender.com/')">Live Demo</button>
-                  </div>
+              <div class="project-description">
+                <h2>Penny Flights</h2>
+                <p>
+                  This is an application that allows users to enter their
+                  location, and receive links to the cheapest flights available
+                  from the entered origin, as well as the cheapest hotels in
+                  each destination. The Skyscanner and IPify APIs were used in
+                  order to pull the necessary data and apply it the application.
+                </p>
+                <div class="link-buttons">
+                  <button
+                    class="live-demo"
+                    onclick="window.open('https://pennyflights.onrender.com/')"
+                  >
+                    Live Demo
+                  </button>
+                  <button
+                    onclick="window.open('https://github.com/obienechionyia/penny-flights')"
+                  >
+                    GitHub
+                  </button>
                 </div>
               </div>
             </div>
           </li>
           <hr class="solid" />
           <li>
-            <h2>BestFlix</h2>
-            <p>
-              I created an application that shows the top movies and shows from
-              the TMDB API and displays them for the user in a format similar to
-              Netflix's. The user can then choose any film or show on display
-              and find a link to a trailer, or add it to a "Watch Later" list.
-              Tech used:
-              <span class="tech-used"
-                >Javascript, React.js, HTML, and CSS</span
-              >
-            </p>
-            <div class="project-display">
-              <div class="project-img">
-                <img src="images/bestflix.png" alt="bestflix screenshot" />
+            <div class="project-container">
+              <div class="project-display">
+                <div class="project-img">
+                  <img src="images/bestflix.png" alt="bestflix" />
+                </div>
               </div>
-              <div class="tech">
-                <div class="tech-links">
-                  <div class="link-buttons">
-                    <button
-                      onclick="window.open('https://github.com/obienechionyia/BestFlixApp')"
-                    >
-                      GitHub
-                    </button>
-                    <button onclick="window.open('https://bestflix.onrender.com/')" >Live Demo</button>
-                  </div>
+              <div class="project-description">
+                <h2>BestFlix</h2>
+                <p>
+                  This is an application that allows users to enter their
+                  location, and receive links to the cheapest flights available
+                  from the entered origin, as well as the cheapest hotels in
+                  each destination. The Skyscanner and IPify APIs were used in
+                  order to pull the necessary data and apply it the application.
+                </p>
+                <div class="link-buttons">
+                  <button
+                    onclick="window.open('https://bestflix.onrender.com/')"
+                  >
+                    Live Demo
+                  </button>
+                  <button
+                    onclick="window.open('https://github.com/obienechionyia/penny-flights')"
+                  >
+                    GitHub
+                  </button>
                 </div>
               </div>
             </div>
           </li>
-        </li>
-        <hr class="solid" />
-        <li>
-          <h2>Landing Page</h2>
-          <p>
-            This is a basic website landing page for a fake company, made with HTML/CSS/Bootstrap and Javascript. Tech used:
-            <span class="tech-used"
-              >Javascript, React.js, HTML, and CSS</span
-            >
-          </p>
-          <div class="project-display">
-            <div class="project-img">
-              <img
-                src="images/landing_page.png"
-                alt="penny flights screenshot"
-              />
-            </div>
-            <div class="tech">
-              <div class="tech-links">
-                <div class="link-buttons">
-                  <button
-                    onclick="window.open('https://github.com/obienechionyia/la-landing-page')"
-                  >
-                    GitHub
-                  </button>
-                  <button onclick="window.open('https://la-landing-page.onrender.com/')">Live Demo</button>
+          <hr class="solid" />
+          <li>
+            <div class="project-container">
+              <div class="project-display">
+                <div class="project-img">
+                  <img src="images/nudgephoto.png" alt="nudge app" />
                 </div>
               </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <hr class="solid" />
-          <h2>Nudge</h2>
-          <p>
-            This is a front-end app which allows users to add, edit, and delete tasks from a custom list. It features a simple, easy to use interface that allows for easy editing and updates. Tech used:
-            <span class="tech-used"
-              >Javascript, HTML, and CSS</span
-            >
-          </p>
-          <div class="project-display">
-            <div class="project-img">
-              <img
-                src="images/nudgephoto.png"
-                alt="nudge app screenshot"
-              />
-            </div>
-            <div class="tech">
-              <div class="tech-links">
+              <div class="project-description">
+                <h2>Nudge</h2>
+                <p>
+                  This is an application that allows users to enter their
+                  location, and receive links to the cheapest flights available
+                  from the entered origin, as well as the cheapest hotels in
+                  each destination. The Skyscanner and IPify APIs were used in
+                  order to pull the necessary data and apply it the application.
+                </p>
                 <div class="link-buttons">
+                  <button
+                    onclick="window.open('https://nudge-app.onrender.com/')"
+                  >
+                    Live Demo
+                  </button>
                   <button
                     onclick="window.open('https://github.com/obienechionyia/nudge.app')"
                   >
                     GitHub
                   </button>
-                  <button onclick="window.open('https://nudge-app.onrender.com')">Live Demo</button>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
-        <hr class="solid" />
-        <li>
-          <h2>Weather App</h2>
-          <p>
-            This app uses the OpenWeatherMap API to retrieve current weather forecasts in any city or zip code in the world, and display them to the user either in the terminal or through a GUI made with tkinter. It also uses geolocation tracking to allow users to retrieve weather info for their current location. Tech used:
-            <span class="tech-used"
-              >Python, Tkinter</span
-            >
-          </p>
-          <div class="project-display">
-            <div class="project-img">
-              <img
-                src="images/weatherapp.png"
-                alt="weather app screenshot"
-              />
-            </div>
-            <div class="tech">
-              <div class="tech-links">
+          </li>
+          <hr class="solid" />
+          <li>
+            <div class="project-container">
+              <div class="project-display">
+                <div class="project-img">
+                  <img
+                    src="images/landing_page.png"
+                    alt="hiking landing page"
+                  />
+                </div>
+              </div>
+              <div class="project-description">
+                <h2>Hiking Landing Page</h2>
+                <p>
+                  This is a sample landing page I created for a client that
+                  asked for an interactive, eye-catching page to grab viewers
+                  attention and create interest as the first view of their
+                  website. I was able to incorporate a responsive carousel,
+                  which is essential for any site that uses bright, captivating
+                  images to grab their visitors' attention.
+                </p>
                 <div class="link-buttons">
                   <button
-                    onclick="window.open('https://github.com/obienechionyia/WeatherApp')"
+                    onclick="window.open('https://la-landing-page.onrender.com/')"
+                  >
+                    Live Demo
+                  </button>
+                  <button
+                    onclick="window.open('https://github.com/obienechionyia/la-landing-page')"
                   >
                     GitHub
                   </button>
                 </div>
               </div>
             </div>
-          </div>
-        </li>
+          </li>
+          <hr class="solid" />
+          <li>
+            <div class="project-container">
+              <div class="project-display">
+                <div class="project-img">
+                  <img src="images/weatherapp.png" alt="weather app" />
+                </div>
+              </div>
+              <div class="project-description">
+                <h2>Weather App</h2>
+                <p>
+                  This is an application that allows users to enter their
+                  location, and receive links to the cheapest flights available
+                  from the entered origin, as well as the cheapest hotels in
+                  each destination. The Skyscanner and IPify APIs were used in
+                  order to pull the necessary data and apply it the application.
+                </p>
+                <div class="link-buttons">
+                  <button
+                    onclick="window.open('https://github.com/obienechionyia/weatherapp')"
+                  >
+                    GitHub
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </section>
-    <footer>
-        <center><p>Copyright 2023 Obi Enechionyia</p></center>
+    <footer id="footer">
+      <center>
+        <a href="mailto: obienechionyia@gmail.com">
+          <img class="contact-link" src="images/email.png" alt="email link" />
+        </a>
+        <a href="https://linkedin.com/in/obi-enechionyia" target="_blank">
+          <img
+            class="contact-link"
+            src="images/linkedin.png"
+            alt="linkedin link"
+          />
+        </a>
+        <a href="https://github.com/obienechionyia" target="_blank"
+          ><img
+            class="contact-link"
+            src="images/github.png"
+            alt="github link"
+          />
+        </a>
+      </center>
     </footer>
     <script>
-        const menuBtn = document.querySelector(".hamburger");
-        const mobileNav = document.querySelector(".mobile-nav");
-        const links = document.querySelectorAll(".mobile-nav a");
-        menuBtn.addEventListener("click", function () {
-            menuBtn.classList.toggle("is-active");
-            mobileNav.classList.toggle("show");
-        })
-        links.forEach(link => {
-            link.addEventListener("click", function (e) {
-                menuBtn.classList.remove("is-active");
-                mobileNav.classList.remove("show");
-            })
+      const menuBtn = document.querySelector(".hamburger");
+      const mobileNav = document.querySelector(".mobile-nav");
+      const links = document.querySelectorAll(".mobile-nav a");
+      menuBtn.addEventListener("click", function () {
+        menuBtn.classList.toggle("is-active");
+        mobileNav.classList.toggle("show");
+      });
+      links.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          menuBtn.classList.remove("is-active");
+          mobileNav.classList.remove("show");
         });
+      });
     </script>
   </body>
 </html>
