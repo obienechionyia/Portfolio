@@ -35,7 +35,9 @@
               >
             </li>
             <li>
-              <a href="#footer">Hire Me</a>
+              <a href="mailto: obienechionyia@gmail.com">
+                <button class="hire-me-nav">Hire Me</button></a
+              >
             </li>
           </ul>
         </div>
@@ -48,7 +50,7 @@
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="https://obienechionyia.tiiny.site/" target="_blank">Resume</a>
-      <a href="#">Hire Me</a>
+      <a href="@mailto:obienechionyia@gmail.com">Hire Me</a>
     </nav>
 
     <script>
@@ -68,8 +70,16 @@
     <section id="home">
       <div class="home-text">
         <p>
-          <b>I'm Obi Enechionyia</b> – a front-end developer based in Los
-          Angeles, California.
+          <b
+            >I'm
+            <a
+              class="obi"
+              href="https://en.wikipedia.org/wiki/Obi_Enechionyia"
+              target="_blank"
+              >Obi Enechionyia</a
+            ></b
+          >
+          – a front-end web developer based in Los Angeles, California.
         </p>
         <a href="#projects"
           ><button><b>View Projects</b></button></a
@@ -85,11 +95,18 @@
           Javascript, React.js, Node.js, Python, Django, HTML, and CSS. After
           attending Temple University for four years on a basketball
           scholarship, I decided to jump head-first into web development while
-          playing basketball professionally in Europe. It has been a passion of
-          mine since high school, and I always knew I would find my way back to
-          it after finishing my athletic career. If I'm not coding, I'm probably
-          listening to music, watching sports, or at the beach 😎 Thanks for
-          visiting my site, and I hope you enjoy my personal projects below!
+          playing basketball professionally in Europe.
+        </p>
+        <p>
+          Coding has been a passion of mine since high school, and I always knew
+          I would find my way back to it after finishing my athletic career.
+          What I enjoy most about development is the chance to unleash my
+          creativity and witness my work spring to life.
+        </p>
+        <p>
+          If I'm not coding, I'm probably listening to music, watching sports,
+          or at the beach 😎 Thanks for visiting my site; I hope you enjoy my
+          personal projects below!
         </p>
         <a href="https://obienechionyia.tiiny.site/" target="_blank"
           ><button><b>View My Resume</b></button></a
@@ -101,6 +118,13 @@
     <section id="projects">
       <div class="projects-text">
         <h1>Projects</h1>
+        <p class="projects-intro">
+          "From the court to the code" – welcome to my personal project zone! As
+          a former professional basketball player turned web developer, I've
+          taken my love for challenges from the game to the world of coding. See
+          how I've translated that same determination into building creative,
+          functional websites and applications.
+        </p>
         <ul>
           <li>
             <div class="project-container">
@@ -115,11 +139,14 @@
               <div class="project-description">
                 <h2>Penny Flights</h2>
                 <p>
-                  This is an application that allows users to enter their
-                  location, and receive links to the cheapest flights available
-                  from the entered origin, as well as the cheapest hotels in
-                  each destination. The Skyscanner and IPify APIs were used in
-                  order to pull the necessary data and apply it the application.
+                  As a travel enthusiast, I embarked on crafting Penny Flights
+                  to empower wanderers to explore without breaking the bank. I
+                  designed an intuitive interface using React that ensures
+                  effortless flight searches and bookings. The most challenging
+                  part of this project was dealing with various bugs that were
+                  caused by API changes. I learned a lot about the patience it
+                  takes to continuously support an application, and my ability
+                  to identify bugs in a timely manner improved greatly.
                 </p>
                 <div class="link-buttons">
                   <button
@@ -129,6 +156,7 @@
                     Live Demo
                   </button>
                   <button
+                    class="github"
                     onclick="window.open('https://github.com/obienechionyia/penny-flights')"
                   >
                     GitHub
@@ -148,19 +176,22 @@
               <div class="project-description">
                 <h2>BestFlix</h2>
                 <p>
-                  This is an application that allows users to enter their
-                  location, and receive links to the cheapest flights available
-                  from the entered origin, as well as the cheapest hotels in
-                  each destination. The Skyscanner and IPify APIs were used in
-                  order to pull the necessary data and apply it the application.
+                  BestFlix is a React-based Netflix clone that uses the TMDB API
+                  to offer a wide variety of movies and TV shows, including
+                  original content. It also features an interactive "Watch
+                  Later" list, so you can easily keep track of what you want to
+                  watch. I used this project to practice my CSS skills, which
+                  improved considerably as a result.
                 </p>
                 <div class="link-buttons">
                   <button
+                    class="live-demo"
                     onclick="window.open('https://bestflix.onrender.com/')"
                   >
                     Live Demo
                   </button>
                   <button
+                    class="github"
                     onclick="window.open('https://github.com/obienechionyia/penny-flights')"
                   >
                     GitHub
@@ -180,19 +211,22 @@
               <div class="project-description">
                 <h2>Nudge</h2>
                 <p>
-                  This is an application that allows users to enter their
-                  location, and receive links to the cheapest flights available
-                  from the entered origin, as well as the cheapest hotels in
-                  each destination. The Skyscanner and IPify APIs were used in
-                  order to pull the necessary data and apply it the application.
+                  Nudge is a JavaScript-based CRUD reminder application that
+                  helps you stay organized and on top of your tasks. It allows
+                  you to create reminders, edit them, and delete them as needed.
+                  Although simple, this app displays the importance of
+                  straightforwardness in a CRUD app, with an incredibly
+                  user-friendly interface.
                 </p>
                 <div class="link-buttons">
                   <button
+                    class="live-demo"
                     onclick="window.open('https://nudge-app.onrender.com/')"
                   >
                     Live Demo
                   </button>
                   <button
+                    class="github"
                     onclick="window.open('https://github.com/obienechionyia/nudge.app')"
                   >
                     GitHub
@@ -215,20 +249,24 @@
               <div class="project-description">
                 <h2>Hiking Landing Page</h2>
                 <p>
-                  This is a sample landing page I created for a client that
-                  asked for an interactive, eye-catching page to grab viewers
-                  attention and create interest as the first view of their
-                  website. I was able to incorporate a responsive carousel,
-                  which is essential for any site that uses bright, captivating
-                  images to grab their visitors' attention.
+                  I created an interactive, photo-based sample landing page for
+                  a hiking website. I was given a design that was created in
+                  Photoshop by the client, and was asked to recreate the design
+                  using HTML, CSS and Javascript, which I was able to do
+                  effectively. The most challenging part of this project was
+                  sticking to the script; although I wanted to add my own ideas
+                  to the project, I understood the importance of creating the
+                  site exactly how the client wanted it.
                 </p>
                 <div class="link-buttons">
                   <button
+                    class="live-demo"
                     onclick="window.open('https://la-landing-page.onrender.com/')"
                   >
                     Live Demo
                   </button>
                   <button
+                    class="github"
                     onclick="window.open('https://github.com/obienechionyia/la-landing-page')"
                   >
                     GitHub
@@ -248,14 +286,17 @@
               <div class="project-description">
                 <h2>Weather App</h2>
                 <p>
-                  This is an application that allows users to enter their
-                  location, and receive links to the cheapest flights available
-                  from the entered origin, as well as the cheapest hotels in
-                  each destination. The Skyscanner and IPify APIs were used in
-                  order to pull the necessary data and apply it the application.
+                  I created a weather app that shows the current weather status
+                  in any city in the world. The app is written in Python and
+                  uses the OpenWeatherMap API to get weather data. This is one
+                  of my favorite applications, as it was the first function
+                  project I built during my development journey. With this
+                  project, I learned how to connect a back-end API database to
+                  to a front-end application.
                 </p>
                 <div class="link-buttons">
                   <button
+                    class="github"
                     onclick="window.open('https://github.com/obienechionyia/weatherapp')"
                   >
                     GitHub

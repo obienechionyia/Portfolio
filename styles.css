@@ -15,9 +15,9 @@ body {
 
 header {
   color: #384342;
-  position: sticky;
   top: 0;
   z-index: 100;
+  position: sticky;
 }
 
 #navbar {
@@ -26,9 +26,22 @@ header {
   padding: 10px;
 }
 
+.hire-me-nav {
+  font-size: 95%;
+  padding: 0.2rem 0.9rem;
+  cursor: pointer;
+  background-color: rgb(246, 246, 246);
+  border-radius: 3px;
+  border: 1px solid;
+}
+
+.hire-me-nav:hover {
+  background-color: #e7e7e7;
+}
+
 .nav-scroll {
-  background-color: black;
-  opacity: 0.5;
+  background-color: rgb(241, 241, 241);
+  opacity: 1;
 }
 
 nav ul {
@@ -95,6 +108,7 @@ section ul li h2 {
 
 .logo img:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 
 @keyframes slideInLeft {
@@ -130,9 +144,23 @@ section ul li h2 {
   width: 9rem;
 }
 
+.obi {
+  text-decoration: none;
+  color: #478b8b;
+}
+
+.obi:hover {
+  color: #73afaf;
+}
+
+.home-text button:hover {
+  background-color: #478b8b;
+}
+
 #about {
   display: flex;
   margin-bottom: 10rem;
+  padding-top: 5rem;
 }
 
 #about h1 {
@@ -145,7 +173,7 @@ section ul li h2 {
 }
 
 #about button {
-  margin-top: 1rem;
+  margin-top: 2rem;
   color: #384342;
   background-color: rgb(246, 246, 246);
   padding: 0.5rem 1rem;
@@ -156,6 +184,10 @@ section ul li h2 {
   cursor: pointer;
   font-size: 0.9rem;
   width: 10rem;
+}
+
+#about button:hover {
+  background-color: #e7e7e7;
 }
 
 .about-img {
@@ -169,6 +201,7 @@ section ul li h2 {
   line-height: 2rem;
   border-radius: 20px;
   margin-top: 10rem;
+  padding-top: 5rem;
 }
 
 #projects h1 {
@@ -213,10 +246,10 @@ section ul li h2 {
   display: flex;
 }
 
-.link-buttons button {
-  width: 8rem;
+.link-buttons .live-demo {
+  width: 9rem;
   margin-right: 1rem;
-  height: 1.7rem;
+  height: 2rem;
   font-size: 0.9rem;
   background-color: #3d6d6d;
   color: #e7e7e7;
@@ -224,6 +257,25 @@ section ul li h2 {
   border-radius: 3px;
   cursor: pointer;
   font-weight: bold;
+}
+
+.link-buttons .live-demo:hover {
+  background-color: #478b8b;
+}
+
+.link-buttons .github {
+  width: 7rem;
+  height: 2rem;
+  font-size: 0.9rem;
+  background-color: rgb(246, 246, 246);
+  border-radius: 3px;
+  border: 1px solid;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.link-buttons .github:hover {
+  background-color: #e7e7e7;
 }
 
 projects hr.solid {
@@ -242,7 +294,7 @@ projects hr.solid {
 .hire-me {
   max-width: 12rem;
   margin-bottom: 1rem;
-  margin-left: 24rem;
+  margin-left: 36%;
 }
 
 footer {
@@ -260,6 +312,10 @@ footer a {
   margin-right: 1rem;
   color: #e7e7e7;
   cursor: pointer;
+}
+
+.contact-link:hover {
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 950px) {
