@@ -148,6 +148,10 @@ section ul li h2 {
   width: 9rem;
 }
 
+.home-text p {
+  margin-bottom: 0;
+}
+
 .obi {
   text-decoration: none;
   color: #478b8b;
@@ -169,6 +173,7 @@ section ul li h2 {
 
 #about h1 {
   font-size: 3rem;
+  font-family: "Permanent Marker", cursive;
 }
 
 #about p {
@@ -209,14 +214,16 @@ section ul li h2 {
 
 #projects {
   display: flex;
-  line-height: 2rem;
+  line-height: 1.5rem;
   border-radius: 20px;
   margin-top: 10rem;
+  margin-bottom: 1rem;
   padding-top: 5rem;
 }
 
 #projects h1 {
   font-size: 3rem;
+  font-family: "Permanent Marker", cursive;
 }
 
 .project-container {
@@ -271,7 +278,7 @@ section ul li h2 {
 }
 
 .link-buttons .github {
-  width: 7rem;
+  width: 9rem;
   height: 2rem;
   font-size: 0.9rem;
   background-color: rgb(246, 246, 246);
@@ -289,14 +296,12 @@ section ul li h2 {
   opacity: 0.3;
 }
 
-.hire-me-container {
-  display: flex;
-}
-
-.hire-me {
-  max-width: 12rem;
-  margin-bottom: 1rem;
-  margin-left: 38%;
+.outro {
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  line-height: 1.5rem;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.3rem;
 }
 
 footer {
@@ -339,11 +344,11 @@ footer a {
   .hamburger {
     position: sticky;
     display: block;
-    width: 42px;
-    height: 42px;
+    width: 3rem;
+    height: 3rem;
     cursor: pointer;
     margin: 10px;
-    background-color: #e7e7e7;
+    background-color: transparent;
     opacity: 1;
     outline: none;
     border: none;
@@ -409,10 +414,15 @@ footer a {
 }
 
 @media screen and (max-width: 750px) {
+  .show-mobile-logo {
+    display: none;
+  }
+
   #home {
     margin-top: 0;
     margin-left: 2rem;
     margin-right: 2rem;
+    margin-bottom: 6rem;
   }
   .home-text {
     padding: 0;
@@ -445,12 +455,16 @@ footer a {
 
   #projects {
     display: block;
-    margin: 5rem 2rem;
+    margin: 6rem 2rem 4rem 2rem;
     padding: 0;
   }
 
   .projects-text h1 {
-    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .projects-text p {
+    margin-bottom: 1.5rem;
   }
 
   .projects-intro {
@@ -460,6 +474,7 @@ footer a {
   .project-container {
     display: block;
     margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .project-display img {
@@ -469,9 +484,6 @@ footer a {
   .project-display {
     display: block;
     margin: 0;
-  }
-  .projects-text h1 {
-    line-height: 5rem;
   }
 
   .link-buttons {
@@ -486,5 +498,9 @@ footer a {
 
   .link-buttons .github {
     width: 50%;
+  }
+
+  .outro {
+    margin: 2rem 2rem 5rem 2rem;
   }
 }
