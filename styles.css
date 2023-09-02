@@ -409,9 +409,7 @@ footer a {
     margin-top: 3rem;
     /* font-weight: lighter; */
   }
-}
 
-@media screen and (max-width: 750px) {
   .show-mobile-logo {
     display: none;
   }
@@ -504,3 +502,97 @@ footer a {
     font-size: 1.2rem;
   }
 }
+
+/* @media screen and (max-width: 750px) {
+  .show-mobile-logo {
+    display: none;
+  }
+
+  #home {
+    margin-top: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 6rem;
+  }
+  .home-text {
+    padding: 0;
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  #about {
+    display: block;
+    margin: 2rem 2rem;
+    padding: 0;
+  }
+
+  #about button {
+    margin-top: 1rem;
+  }
+
+  .about-text h1 {
+    margin: 0;
+  }
+
+  .about-img {
+    margin-top: 2rem;
+    display: none;
+  }
+
+  .about-img-mobile {
+    display: block;
+    text-align: center;
+  }
+
+  #projects {
+    display: block;
+    margin: 6rem 2rem 4rem 2rem;
+  }
+
+  .projects-text h1 {
+    margin-bottom: 2rem;
+  }
+
+  .projects-text p {
+    margin-bottom: 1.5rem;
+  }
+
+  .projects-intro {
+    margin: 0;
+  }
+
+  .project-container {
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .project-display img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .project-display {
+    display: block;
+    margin: 0;
+  }
+
+  .link-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link-buttons .live-demo {
+    margin-right: 1rem;
+    width: 50%;
+  }
+
+  .link-buttons .github {
+    width: 50%;
+    color: #384342;
+  }
+
+  .outro {
+    margin: 2rem 2rem 5rem 2rem;
+    font-size: 1.2rem;
+  }
+} */
