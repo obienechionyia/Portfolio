@@ -233,6 +233,7 @@ section ul li h2 {
 #projects h2 {
   font-size: 1.5rem;
   color: #384342;
+  margin: 0;
 }
 
 #projects p {
@@ -241,6 +242,12 @@ section ul li h2 {
 
 #projects a {
   font-size: 1.3rem;
+}
+
+.project-description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .project-img img {
